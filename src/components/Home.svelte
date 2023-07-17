@@ -23,7 +23,7 @@
   </div>
 </div>
 
-<style scoped lang="scss">
+<style lang="scss">
   .home {
     &__container {
       display: grid;

@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { link } from "svelte-routing";
 </script>
 

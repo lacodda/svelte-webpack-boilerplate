@@ -2,19 +2,6 @@ const { isDev } = require('../common/webpack.helpers');
 const SveltePreprocess = require('svelte-preprocess');
 
 module.exports = [
-    // {
-    //     test: /\.svelte$/,
-    //     loader: 'svelte-loader',
-    //     options: {
-    //       compilerOptions: {
-    //         dev: isDev()
-    //       },
-
-    //       emitCss: true,
-    //       hotReload: isDev(),
-    //       preprocess: require('svelte-preprocess')({})
-    //     }
-    //   },
     {
       test: /\.svelte$/,
       use: {

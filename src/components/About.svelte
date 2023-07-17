@@ -4,7 +4,7 @@
   </div>
 </div>
 
-<style scoped lang="scss">
+<style lang="scss">
   .about {
     &__container {
       display: grid;

@@ -47,7 +47,6 @@
   },
   "extends": [
     "eslint:recommended",
-    "standard-with-typescript",
     "plugin:svelte/recommended"
   ],
   "parser": "@babel/eslint-parser",
