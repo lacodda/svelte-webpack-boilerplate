@@ -1,16 +1,10 @@
-<script>
-  import { link } from "svelte-routing";
-</script>
-
 <nav class="navbar__container">
   <div class="navbar__menu">
-    <a href="/" use:link>Home</a>
-    <a href="/info" use:link>Info</a>
-    <a href="/about" use:link>About</a>
+    <slot />
   </div>
 </nav>
 
-<style lang="scss">
+<style global lang="scss">
   .navbar {
     &__container {
       position: absolute;
@@ -30,6 +24,20 @@
         &:hover {
           color: var(--purple);
         }
+      }
+      input,
+      textarea,
+      select {
+        padding: 0.45rem 0.5rem;
+        border-color: transparent;
+        border-radius: 0.5rem;
+        font-size: 0.8rem;
+        line-height: 0.5rem;
+        height: min-content;
+        color: var(--black);
+      }
+      input {
+        width: 100%;
       }
     }
   }

@@ -1,12 +1,14 @@
 <script lang="ts">
-  import logo from "src/images/logo.svg";
+  import { Button } from "@/ui";
+  import logo from "@/images/logo.svg";
+
   let count: number = 0;
 
   function inc(): void {
     count++;
   }
 
-  function desc(): void {
+  function dec(): void {
     count--;
   }
 </script>
@@ -14,11 +16,11 @@
 <div class="home__container">
   <div class="home__title">
     <img src={logo} width="100" alt="svelte" />
-    <h1>SVELTE Boilerplate</h1>
+    <h1>Svelte Boilerplate</h1>
   </div>
   <div class="home__counter">
-    <button class="btn" on:click={inc}>+</button>
-    <button class="btn" on:click={desc}>−</button>
+    <Button class="size-l" on:click={inc}>+</Button>
+    <Button class="size-l" on:click={dec}>−</Button>
     <div class="home__count">{count}</div>
   </div>
 </div>
@@ -37,13 +39,13 @@
       display: flex;
       column-gap: 1rem;
       h1 {
+        font-size: var(--font-size-h1);
         width: max-content;
         text-transform: uppercase;
         background: var(--teal);
         background: var(--gr-teal-blue);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 4rem;
       }
     }
     &__counter {

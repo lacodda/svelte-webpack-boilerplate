@@ -1,6 +1,7 @@
 <script>
   import { Router, Route } from "svelte-routing";
-  import Navbar from "./Navbar.svelte";
+  import { link } from "svelte-routing";
+  import { Navbar } from "@/ui";
   import Home from "./Home.svelte";
   import About from "./About.svelte";
   import Info from "./Info.svelte";
@@ -10,7 +11,11 @@
 
 <Router {url}>
   <div class="app">
-    <Navbar />
+    <Navbar>
+      <a href="/" use:link>Home</a>
+      <a href="/info" use:link>Info</a>
+      <a href="/about" use:link>About</a>
+    </Navbar>
     <Route path="/" component={Home} />
     <Route path="/about" component={About} />
     <Route path="/info" component={Info} />

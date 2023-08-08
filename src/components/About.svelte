@@ -17,6 +17,7 @@
     &__title {
       display: flex;
       h1 {
+        font-size: var(--font-size-h1);
         width: max-content;
         text-transform: uppercase;
         background: var(--teal);
